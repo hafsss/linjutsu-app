@@ -1,0 +1,290 @@
+body {
+    background-color: #000000;
+    color: #33ffcc;
+    font-family: 'Tektur', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* prevent content from being hidden under fixed navbar */
+}
+
+.logo {
+    font-family: 'Tektur', sans-serif;
+    font-size: 110px;
+    color: #33ffcc;
+    margin: 1rem 0;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+
+    text-align: center;
+    padding-left: 40px;
+}
+
+.jutsu {
+    color: #f06060; /* bright red */
+    text-shadow: 0 0 8px #f37474, 0 0 15px #ff0000;
+}
+.linjutsu {
+    color: #f06060;
+    text-shadow: 0 0 8px #f37474, 0 0 15px #ff0000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 👈 center child items horizontally */
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container h1 {
+    font-size: 2.8rem; /* Bigger title */
+    font-weight: 800;
+    /* text-shadow: 0 0 10px #00ffcc; */
+    margin-bottom: 1rem;
+}
+
+
+.intro-text {
+    max-width: 700px;             /* Wider block */
+    font-size: 1.3rem;            /* Larger text */
+    padding: 1.5rem 2rem;         /* More breathing space */
+    line-height: 1.8;
+    background-color: #111;
+    border-left: 3px solid #33ffcc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #00ffc8;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+
+.welcome {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f06060;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Tektur', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 10px #f06060, 0 0 20px #ff1a1a, 0 0 30px #ff3b3b;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff1a1a, 0 0 25px #ff3b3b, 0 0 40px #ff0000;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #111;
+    padding: 0.3rem 2rem;
+    box-shadow: 0 0 10px #33ffcc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;  /* Align items to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 450px;
+    padding: 0;
+}
+
+.navbar a {
+    font-family: 'Tektur', sans-serif;
+    font-size: 1.1rem;
+    color: #33ffcc;
+    text-decoration: none;
+    text-shadow: 0 0 8px #00ffc8;
+    transition: color 0.2s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #33ffcc, 0 0 20px #00ffcc;
+}
+
+.navbar .active {
+    color: #f06060;
+    text-shadow: 0 0 10px #f06060, 0 0 20px #ff3b3b;
+    font-weight: bold;
+}
+
+.nav-logo {
+    font-family: 'Tektur', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #33ffcc;
+    text-shadow: 0 0 5px #00ffc8;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo .jutsu {
+    color: #f06060; /* bright red */
+    text-shadow: 0 0 8px #f37474, 0 0 15px #ff0000;
+}
+
+/* === ABOUT PAGE SECTIONS === */
+.about-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #00ffc8;
+  text-shadow: 0 0 12px #00ffc8;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Tektur', sans-serif;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Shared section base */
+section.origin {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  background-color: #101010;
+  border-left: 4px solid #00ffc8;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc822;
+  font-family: 'Tektur', sans-serif;
+}
+section.services {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  background-color: #101010;
+  border-left: 4px solid #5ee0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #5ee0ff33;
+  font-family: 'Tektur', sans-serif;
+}
+.services {
+  border-left-color: #5ee0ff;
+  box-shadow: 0 0 20px #5ee0ff33;
+}
+.services h2 {
+  color: #5ee0ff;
+  text-shadow: 0 0 6px #5ee0ff;
+}
+/* Section titles */
+section.origin h2 {
+  color: #00ffc8;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  text-shadow: 0 0 6px #00ffc8;
+}
+
+/* Paragraph and list styles */
+section p, section ul {
+  font-size: 1.05rem;
+  color: #ccc;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* Bullet points */
+section ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.75rem;
+}
+
+/* Personal note section */
+.note {
+  background-color: #0c0c0c;
+  border-left: 4px solid #888;
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Ninja quote in origin */
+.origin .ninja-path {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #aaffee;
+  text-shadow: 0 0 5px #00ffc8;
+  line-height: 1.6;
+}
+
+/* Who I Am Section */
+section.whoiam {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #101010;
+  border-left: 4px solid #ff00cc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff00cc33;
+  font-family: 'Tektur', sans-serif;
+  color: #ddd;
+}
+
+.whoiam h2 {
+  color: #ff00cc;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #ff00cc;
+}
+
+.whoiam p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.whoiam .identity {
+  color: #ff99dd;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff99dd;
+}
+.note {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  border-left-color: #cccccc;
+  text-align: center;
+  font-style: italic;
+  color: #e6e6e6;
+  background-color: #0a0a0a;
+  text-shadow: 0 0 6px #cccccc, 0 0 10px #ffffff55;
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  font-family: 'Tektur', sans-serif;
+}
+
